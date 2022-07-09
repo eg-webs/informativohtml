@@ -1,0 +1,35 @@
+/* todos los html */
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* index.html */
+.encabezado{
+    background-color: #FABFB7;
+    padding: 15px 15px;
+}
+
+.container{
+    width: 1140px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+}
+
+.marca{
+    text-align: center;
+}
+
+nav a{
+    margin: 10px 25px;
+    text-align: center;
+}
+
+nav a {
+    display: inline-block;
+    text-decoration: none;
+}
+
