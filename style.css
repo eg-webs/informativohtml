@@ -6,9 +6,16 @@
 }
 
 /* index.html */
-.encabezado{
+.encabezado, footer{
     background-color: #FABFB7;
     padding: 15px 15px;
+}
+
+.logo{
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    opacity: 0.5;
 }
 
 .container{
@@ -35,25 +42,58 @@ nav a {
 }
 
 .imagenIndex{
-    margin: 30px 20px;
-    float: left;
+    margin: 5%;
 }
 
 .container-historia{
-    position: relative;
     height: 300px;
+}
+
+.flex-container{
+    display: flex;
+    /* padding: 10px; */
+}
+
+.flex-container div{
+    width: 650px;
+    margin: 10px;
+    justify-content: space-around;
+}
+
+.contenido-index, .contenido-historia{
+    margin: 10px ;
+    text-align: center;
 }
 
 .historia{
     text-indent: 50px;
-    padding-top: 50px;
-    display: right;
     font-size: 20px;
     line-height: 50px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 15%;
+}
+
+.icons1{
+    width: 35px;
+    margin-top: 15px;
+    margin-right: 10px;
+}
+
+.icons{
+    width: 50px;
+    margin-top: 15px;
+    margin-right: 10px;
+}
+
+.mapa{
     position: relative;
-    top: 30%;
-    margin: 15px 50px;
-    /* display: inline-block; */
+    left: 5%;
+}
+
+.direccion, .redes{
+    padding-top: 50px;
+    padding-left: 70px;
 }
 
 /* Recetas General */
@@ -72,3 +112,4 @@ nav a {
     display: flex;
     justify-content: center;
 }
+
