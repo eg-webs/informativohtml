@@ -55,3 +55,20 @@ nav a {
     margin: 15px 50px;
     /* display: inline-block; */
 }
+
+/* Recetas General */
+.imagenDulces, .imagenSaladas {
+    width: 300px;
+    margin: 30px 20px;
+    opacity: 0.5;
+}
+.textoEncima {
+    position: relative;
+    top: -250px;
+    right: -90px;
+    font-size: 28px;
+}
+.d-flex {
+    display: flex;
+    justify-content: center;
+}
