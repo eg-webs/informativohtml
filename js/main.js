@@ -8,7 +8,7 @@ function mostrarReceta(){
 let btnOcultar = document.getElementById("receta1");
 btnOcultar.addEventListener("click", ocultarBoton);
 
-// funcion para ocultar el boton de ver receta
-function ocultarBoton(){
-    document.getElementById('btnOcultar').style.display = "none";
+// funcion para ocultar la receta y ver otra receta
+function ocultarReceta(){
+    document.getElementById('receta1').style.display = "none";
 }
