@@ -8,7 +8,11 @@
 /* index.html */
 .encabezado, footer{
     background-color: #FABFB7;
-    padding: 15px 15px;
+    padding: 10px 15px;
+}
+
+footer{
+    margin-top: 20px;
 }
 
 .logo{
@@ -41,22 +45,29 @@ nav a {
     text-decoration: none;
 }
 
-.imagenIndex{
-    margin: 5%;
+.titulo-index{
+    text-align: center;
 }
 
-.container-historia{
-    height: 300px;
+.imagenIndex{
+    margin: 10px;
 }
+
+/* .container-historia{
+    height: 300px;
+} */
 
 .flex-container{
     display: flex;
+    justify-content: center;
+    align-items: center;
     /* padding: 10px; */
 }
 
 .flex-container div{
     width: 650px;
     margin: 10px;
+    /* padding: 10px; */
     justify-content: space-around;
 }
 
@@ -71,7 +82,7 @@ nav a {
     line-height: 50px;
     margin-left: 5%;
     margin-right: 5%;
-    margin-top: 15%;
+    margin-top: 7%;
 }
 
 .icons1{
@@ -92,7 +103,7 @@ nav a {
 }
 
 .direccion, .redes{
-    padding-top: 50px;
+    padding-top: 10px;
     padding-left: 70px;
 }
 
@@ -112,4 +123,55 @@ nav a {
     display: flex;
     justify-content: center;
 }
+
+/* receta saladas */
+.titulo-recetas{
+    margin-top: 15px;
+    text-align: center;
+}
+
+.saladas{
+    margin-top: 25px;
+}
+
+.flex-saladas{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.img1{
+    margin-left: 50%;
+}
+
+.imagenes-saladas{
+    width: 300px;
+    height: 200px; 
+}
+
+.saltolinea{
+    margin-top: 8%;
+}
+
+.pizza{
+    width: 300px;
+    height: 200px;
+}
+
+.receta-pizza{
+    padding-left: 180px;
+    padding-bottom: 50px;
+}
+
+.titulo-ingredientes, .titulo-instrucciones{
+    text-decoration-line: underline;
+    text-decoration-style: double;
+}
+
+.titulo-instrucciones{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
 
