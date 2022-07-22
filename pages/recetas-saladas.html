@@ -14,7 +14,7 @@
             <div class="d-flex">
                 <img class="logo" src="../assets/Recetas.jpg" alt="logo">
             </div>
-            <h1 class="marca">RECETAS EN TU COCINA</h1>
+            <h4 class="marca">RECETAS EN TU COCINA</h4>
             <nav>
                 <a href="../index.html">Quienes somos</a>
                 <a href="./recetas.html">Recetas</a>
@@ -26,9 +26,11 @@
     <div>
         <h1 class="titulo-recetas">¡No te pierdas estas recetas saladas!</h1> 
     </div>
+    <section id="galeria">
     <div class="flex-saladas">
-        <div>
-            <a href=#pizza><img class="imagenes-saladas" src="../assets/pizza.jpg"></a>
+        <div class="imagen-adaptable img-galery">
+            <img class="imagenes-saladas label-modal" onclick="mostrarReceta();" src="../assets/pizza.jpg">
+            <h4>Ver receta</h4>
         </div>
         <div>
             <a href=#noquis><img class="imagenes-saladas" src="../assets/NOQUIS.PNG"></a>
@@ -46,41 +48,47 @@
             <a href=#pastel-pollo><img class="imagenes-saladas img1" src="../assets/pastel-pollo.png"></a>
         </div><br>
     </div>      
+    </section>
     <div class="saltolinea"></div>
         <div class="flex-container">
-            <div class="receta-pizza">
+            <!-- <div class="receta-pizza">
                 <img class="imagenes-saladas" src="../assets/pizza.jpg">
             </div>
-            <button type="button" onclick="mostrarReceta();">Ver receta</button><br><br>
-            <button type="button" onclick="ocultarReceta();">Ver otra receta</button>
-            <div id="receta1">
-                <ul>
+            <button type="button" id="btn-modal">
+            <label for="btn-modal" class="label-modal" onclick="mostrarReceta();">Ver Receta</label> -->
+            <!-- <button type="button" onclick="mostrarReceta();">Ver receta</button><br><br>
+            <button type="button" onclick="ocultarReceta();">Cerrar receta</button> -->
+            <div id="receta1" class="modal">
+                <div class="contenedor">
                     <h4 class="titulo-ingredientes">Ingredientes</h4><br>
-                    <li>500 gramos harina 000</li>
-                    <li>300 mililitros de agua</li>
-                    <li>2 cucharadas soperas de aceite de oliva virgen extra</li>
-                    <li> 1 pellizco de sal</li>
-                    <li> 1 sobre de levadura seca de panadero (7 gramos</li>
-                </ul>
-                <h4 class="titulo-instrucciones">Instrucciones</h4>
-                <ol>
-                    <li>Tomamoss un bol amplio y tamizamos dentro la harina. 
-                        Hacemos un hueco dentro, dándole forma de volcán y añadimos 
-                        con cuidado el agua, el aceite y la levadura.</li><br>
-                    <li>Tapamos los líquidos con parte de la harina que tenemos alrededor, añadimos un pellizco de sal y 
-                        dejamos reposar cinco minutos.</li><br>
-                    <li>Con las manos limpias nos ponemos a amasar. Al principio se nos pega a las manos, 
-                        pero al cabo de unos minutos la masa de pizza queda suave, se va despegando y va 
-                        adquiriendo una textura elástica.</li><br>
-                    <li>Cuando la masa de pizza con levadura tenga la consistencia adecuada, formamos una bola con ella, 
-                        y la pintamos con unas gotitas de aceite. En un bol amplio la ponemos y la hacemos rodar para 
-                        que quede bien impregnada del aceite por todos lados. Tapamos con un papel film 
-                        transparente que esté en contacto directo con la masa y cubrimos el bol con un paño limpio. Para que leve, 
-                        la dejamos reposar en un lugar cálido de nuestra casa, alejado de corrientes.</li><br>
-                    <li>Cuando la masa de pizza casera haya crecido hasta alcanzar el doble de su volumen inicial enharinamos levemente la mesa de la cocina 
-                        la volcamos encima y desgasificamos, es decir, golpeamos suavemente con las manos para que pierda el aire. 
-                        Amasamos uno o dos minutos y ya podemos estirar la masa con el rodillo o palo de amasar y preparar nuestra pizza favorita.</li><br>
-                </ol>
+                    <ul class="ingredientes">
+                        <li>500 gramos harina 000</li>
+                        <li>300 mililitros de agua</li>
+                        <li>2 cucharadas soperas de aceite de oliva virgen extra</li>
+                        <li> 1 pellizco de sal</li>
+                        <li> 1 sobre de levadura seca de panadero (7 gramos</li>
+                    </ul>
+                    <h4 class="titulo-instrucciones">Instrucciones</h4>
+                    <ol class="pasos">
+                        <li>Tomamoss un bol amplio y tamizamos dentro la harina. 
+                            Hacemos un hueco dentro, dándole forma de volcán y añadimos 
+                            con cuidado el agua, el aceite y la levadura.</li><br>
+                        <li>Tapamos los líquidos con parte de la harina que tenemos alrededor, añadimos un pellizco de sal y 
+                            dejamos reposar cinco minutos.</li><br>
+                        <li>Con las manos limpias nos ponemos a amasar. Al principio se nos pega a las manos, 
+                           pero al cabo de unos minutos la masa de pizza queda suave, se va despegando y va 
+                            adquiriendo una textura elástica.</li><br>
+                        <li>Cuando la masa de pizza con levadura tenga la consistencia adecuada, formamos una bola con ella, 
+                           y la pintamos con unas gotitas de aceite. En un bol amplio la ponemos y la hacemos rodar para 
+                            que quede bien impregnada del aceite por todos lados. Tapamos con un papel film 
+                            transparente que esté en contacto directo con la masa y cubrimos el bol con un paño limpio. Para que leve, 
+                            la dejamos reposar en un lugar cálido de nuestra casa, alejado de corrientes.</li><br>
+                        <li>Cuando la masa de pizza casera haya crecido hasta alcanzar el doble de su volumen inicial enharinamos levemente la mesa de la cocina 
+                            la volcamos encima y desgasificamos, es decir, golpeamos suavemente con las manos para que pierda el aire. 
+                            Amasamos uno o dos minutos y ya podemos estirar la masa con el rodillo o palo de amasar y preparar nuestra pizza favorita.</li><br>
+                    </ol>
+                    <label class="btn-cerrar" for="btn-modal" onclick="ocultarReceta();">X Cerrar</label>
+                </div>
             </div>
         </div>
     </div>
