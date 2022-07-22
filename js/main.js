@@ -2,6 +2,7 @@
 // para mostrar la receta de la pizza
 function mostrarReceta(){
     document.getElementById('receta1').style.display = 'block';
+    document.getElementById('recetaD1').style.display = 'block';
 }
 
 
@@ -11,4 +12,5 @@ btnOcultar.addEventListener("click", ocultarBoton);
 // funcion para ocultar la receta y ver otra receta
 function ocultarReceta(){
     document.getElementById('receta1').style.display = "none";
+    document.getElementById('recetaD1').style.display = "none";
 }

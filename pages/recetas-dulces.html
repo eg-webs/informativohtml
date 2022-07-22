@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recetas Dulces - Recetas en tu cocina 🧁</title>
+    <link rel="stylesheet" href="../css/normalize.css"/>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+    <header class="encabezado">
+        <div class="container">
+            <div class="d-flex">
+                <img class="logo" src="../assets/Recetas.jpg" alt="logo">
+            </div>
+            <h1 class="marca">RECETAS EN TU COCINA</h1>
+            <nav>
+                <a href="../index.html">Quienes somos</a>
+                <a href="./pages/recetas.html">Recetas</a>
+                <a href="./pages/yoquiero.html">Yo quiero!</a>
+                <a href="./pages/sorteo.html">Sorteo</a>
+            </nav>
+        </div>
+    </header>
+    <div>
+        <h1 class="titulo-recetas">¡No te pierdas estas recetas dulces!</h1> 
+    </div>
+    <div class="flex-dulces">
+        <div>
+            <a href=#barraAlmendras><img class="imagenes-dulces" src="../assets/barraAlmendras.jpg"></a>
+        </div>
+        <div>
+            <a href=#postrecitoDDL><img class="imagenes-dulces" src="../assets/pstrecitoDulceDeLeche.png"></a>
+        </div>
+        <div>
+            <a href=#barritasMuesli><img class="imagenes-dulces" src="../assets/barritasMuesli.jpg"></a>
+        </div>
+    </div>
+    <div class="flex-dulces">
+        <div>
+            <a href=#budinBanana><img class="imagenes-dulces img1" src="../assets/budinBanana.jpg"></a><br>
+        </div>
+
+        <div>
+            <a href=#pastaFrola><img class="imagenes-dulces img1" src="../assets/pastaFrola.jpg"></a>
+        </div><br>
+    </div>      
+    <div class="saltolinea"></div>
+        <div class="flex-container">
+            <div class="receta-barra">
+                <img class="imagenes-dulces" src="../assets/barraAlmendras.jpg">
+            </div>
+            <button type="button" onclick="mostrarReceta();">Ver receta</button><br><br>
+            <button type="button" onclick="ocultarReceta();">Ver otra receta</button>
+            <div id="recetaD1">
+                <ul>
+                    <h4 class="titulo-ingredientes">Ingredientes</h4><br>
+                    <li>80 gramos harina de trigo 0000</li>
+                    <li>40 gramos de almidón de maíz Maizena</li>
+                    <li>60 gramos azúcar impalpable</li>
+                    <li> 1/4 cucharadita polvo de hornear</li>
+                    <li> 75 gramos manteca</li><br>
+                    <h4 class="titulo-ingredientes">Para el relleno</h4><br>
+                    <li> 100 gramos almendras peladas</li>
+                    <li> 50 gramos manteca</li>
+                    <li> 30 gramos azúcar impalpable</li>
+                    <li> 150 gr de dulce de leche</li>
+                </ul>
+                <h4 class="titulo-instrucciones">Instrucciones</h4>
+                <ol>
+                    <li>En un bowl mezclar todos los secos (la harina, la Maizena, el polvo de hornear, el azúcar y la sal).</li><br>
+                    <li>Agregar la manteca fría en cubos y unir con la yema de los dedos.</li><br>
+                    <li>Estirar la masa sobre una budinera enmantecada y enharinada y reservar en la heladera.</li><br>
+                    <li>En una ollita a fuego lento calentar la manteca con el azúcar, las almendras picadas y la leche, revolver hasta que se haya derretido la manteca.</li><br>
+                    <li>Retirar del fuego y dejar enfriar.</li><br>
+                    <li>Untar una fina capa de dulce de leche por encima de la masa y cubrir con la preparación de almendras.</li><br>
+                    <li>Llevar a horno moderado, precalentado, durante aproximadamente 20 minutos o hasta que se haya dorado la masa.</li><br>
+                    <li>Dejar enfriar,cortar y servir.</li><br>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer>
+        <div class="flex-container">
+            <div class="mapa">
+                <iframe width="320" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=%20Buenos%20Aires+(villa%20urquiza)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe> 
+            </div>
+            <div class="direccion">
+                <p>
+                    Av.Rivadavia 4950 - CP 1424
+                </p>
+                <p>
+                    Ciudad Autonoma de Buenos Aires
+                </p>
+                <p>
+                    Tel: 1234-4567
+                </p>
+            </div>
+            <div class="redes">
+                <p>Seguinos en nuestras redes</p>
+                <a href="#" ><img class="icons1" src="../assets/icono-ig.png"></a>
+                <a href="#" ><img class="icons" src="../assets/facebook.png"></a>
+                <a href="#" ><img class="icons" src="../assets/icono-twitter.png"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/200fb205be.js" crossorigin="anonymous"></script>
+    <!-- script de js -->
+    <script src="../js/main.js"></script>
+</body>
+</html>
